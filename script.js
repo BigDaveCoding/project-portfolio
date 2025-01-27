@@ -22,9 +22,15 @@ nav_links.forEach(link => {
 
 const about_me = document.querySelector('.about_me')
 
+const project_one = document.querySelector('.project_one')
+
 fetch('/json_files/portfolio_info.json')
     .then(response => response.json())
     .then((data) => {
         console.log(data)
         about_me.innerText = data.about_me
+
+        console.log(data.project_one)
+
+
     })

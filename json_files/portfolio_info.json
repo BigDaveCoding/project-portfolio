@@ -1,4 +1,11 @@
 
 {
-    "about_me": "I'm a Software Engineer with a passion for web development, data analytics, and game development. Right now, I'm studying the Software Developer Course at iO Academy, where I'm learning a whole bunch of exciting concepts and working on some cool projects."
+    "about_me": "I'm a Software Engineer with a passion for web development, data analytics, and game development. Right now, I'm studying the Software Developer Course at iO Academy, where I'm learning a whole bunch of exciting concepts and working on some cool projects.",
+    "project_one": {
+        "name": "Pokemon Search",
+        "about": "Connects to PokeAPI, fetches relevant data and diaplys the information for the user",
+        "image": "",
+        "alt": "",
+        "skills": ["JavaScript", "TailwindCSS", "API's", "React"]
+    }
 }
