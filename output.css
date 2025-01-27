@@ -800,6 +800,9 @@
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
+  .w-full {
+    width: 100%;
+  }
   .w-screen {
     width: 100vw;
   }
@@ -1052,6 +1055,9 @@
   .auto-rows-min {
     grid-auto-rows: min-content;
   }
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
   .grid-cols-none {
     grid-template-columns: none;
   }
@@ -1207,6 +1213,12 @@
   }
   .justify-items-stretch {
     justify-items: stretch;
+  }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
+  .gap-11 {
+    gap: calc(var(--spacing) * 11);
   }
   .space-y-reverse {
     :where(& > :not(:last-child)) {
@@ -1603,6 +1615,12 @@
   .p-1 {
     padding: calc(var(--spacing) * 1);
   }
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
+  }
+  .px-2 {
+    padding-inline: calc(var(--spacing) * 2);
+  }
   .text-center {
     text-align: center;
   }
@@ -1645,13 +1663,29 @@
   .align-top {
     vertical-align: top;
   }
+  .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
   .text-6xl {
     font-size: var(--text-6xl);
     line-height: var(--tw-leading, var(--text-6xl--line-height));
   }
+  .text-lg {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
   .leading-none {
     --tw-leading: 1;
     line-height: 1;
+  }
+  .font-light {
+    --tw-font-weight: var(--font-weight-light);
+    font-weight: var(--font-weight-light);
   }
   .text-balance {
     text-wrap: balance;
@@ -2178,6 +2212,34 @@
   .transform-view {
     transform-box: view-box;
   }
+  .hover\:underline {
+    &:hover {
+      @media (hover: hover) {
+        text-decoration-line: underline;
+      }
+    }
+  }
+  .hover\:underline-offset-2 {
+    &:hover {
+      @media (hover: hover) {
+        text-underline-offset: 2px;
+      }
+    }
+  }
+  .hover\:underline-offset-4 {
+    &:hover {
+      @media (hover: hover) {
+        text-underline-offset: 4px;
+      }
+    }
+  }
+  .hover\:underline-offset-8 {
+    &:hover {
+      @media (hover: hover) {
+        text-underline-offset: 8px;
+      }
+    }
+  }
 }
 @keyframes spin {
   to {
@@ -2303,6 +2365,10 @@
   initial-value: 0;
 }
 @property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-font-weight {
   syntax: "*";
   inherits: false;
 }
