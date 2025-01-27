@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="./output.css" />
     <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css" />
     <script defer src="./script.js"></script>
 </head>
-<body>
-    <header class="fixed w-full">
+<body class="bg-amber-50">
+    <header class="max-w-[1280px] m-auto">
         <div class="grid grid-cols-3 items-end">
             <div class="p-2">
                 <h2 class="text-3xl">David Smith</h2>
@@ -17,9 +18,9 @@
             </div>
             <span></span>
             <nav class="text-center p-2 gap-11">
-                <a class="px-2 hover:underline hover:underline-offset-4" href="#">About Me</a>
-                <a href="#">Projects</a>
-                <a href="#">Contact</a>
+                <a class="px-2 transition duration-300 hover:underline hover:underline-offset-4 hover:text-amber-800" href="#">About Me</a>
+                <a class="px-2 transition duration-300 hover:underline hover:underline-offset-4 hover:text-orange-900" href="#">Projects</a>
+                <a class="px-2 transition duration-300 hover:underline hover:underline-offset-4 hover:text-orange-900" href="#">Contact</a>
             </nav>
         </div>
     </header>
