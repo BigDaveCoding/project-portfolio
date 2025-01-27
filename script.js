@@ -23,6 +23,10 @@ nav_links.forEach(link => {
 const about_me = document.querySelector('.about_me')
 
 const project_one = document.querySelector('.project_one')
+const p_one_img = document.querySelector('.p_one_img')
+const p_one_title = document.querySelector('.p_one_title')
+const p_one_desc = document.querySelector('.p_one_desc')
+const p_one_skills = document.querySelector('.p_one_skills')
 
 fetch('/json_files/portfolio_info.json')
     .then(response => response.json())
@@ -31,6 +35,16 @@ fetch('/json_files/portfolio_info.json')
         about_me.innerText = data.about_me
 
         console.log(data.project_one)
+
+        p_one_img.src = data.project_one.image
+        p_one_title.textContent = data.project_one.name
+        p_one_desc.textContent = data.project_one.about
+        data.project_one.skills.forEach(skill => {
+            console.log(skill)
+            const span = document.createElement("span")
+            span.textContent = `#${skill} `
+            p_one_skills.appendChild(span)
+        })
 
 
     })
