@@ -7,21 +7,24 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="./output.css" />
     <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css" />
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css" />
     <script defer src="./script.js"></script>
 </head>
 <body class="bg-amber-50">
     <header class="fixed top-0 left-0 right-0 max-w-[1280px] w-full mx-auto">
-        <div class="grid grid-cols-3 items-end">
+        <div class="grid grid-cols-[3fr_1fr] border-b-2">
             <div class="p-2">
                 <h2 class="text-3xl">David Smith</h2>
                 <p class="text-xl font-light">Software Developer</p>
             </div>
-            <span></span>
-            <nav class="text-center p-2 ">
-                <a class="px-2 transition duration-300 hover:underline hover:underline-offset-4 hover:text-amber-800" href="#">About Me</a>
+            <div class="flex items-center justify-center">
+                <i class="fa-solid fa-bars text-3xl cursor-pointer"></i>
+            </div>
+            <!-- <nav class="hidden text-center p-2 ">
+                <a class="px-2 transition duration-300 hover:underline hover:underline-offset-4 hover:text-amber-800 before:content['-']" href="#">About Me</a>
                 <a class="px-2 transition duration-300 hover:underline hover:underline-offset-4 hover:text-orange-900" href="#">Projects</a>
                 <a class="px-2 transition duration-300 hover:underline hover:underline-offset-4 hover:text-orange-900" href="#">Contact</a>
-            </nav>
+            </nav> -->
         </div>
     </header>
     
