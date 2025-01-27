@@ -7,5 +7,12 @@
         "image": "../images/pixel_pokemon.png",
         "alt": "",
         "skills": ["JavaScript", "TailwindCSS", "API's", "React"]
+    },
+    "project_two": {
+        "name" : "project name",
+        "about" : "description of the project",
+        "image" : "",
+        "alt" : "",
+        "skills" : ["skill 1", "skill 2", "skill 3"]
     }
 }
