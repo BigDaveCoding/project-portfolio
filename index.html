@@ -50,7 +50,7 @@
     </section>
 
     <section class="projects">
-        <h3 class=" text-4xl text-center py-2 text-amber-950" style="font-family: 'Poiret';">MY LATEST PROJECTS</h3>
+        <h3 class=" text-4xl text-center py-2">MY LATEST PROJECTS</h3>
         <div class="project_one">
             <div class="flex justify-center items-center bg-blue-50 pt-2 border-t-2 border-b-2 border-amber-800/60">
                 <img class="p_one_img w-9/12" src="" alt="" />
@@ -83,7 +83,25 @@
     </section>
 
     <section class="contact">
-        
+        <hr />
+        <h3 class="text-4xl p-2">Get In Touch.</h3>
+        <form class="px-2">
+            <div class="flex flex-col">
+                <label class="py-2" for="name">Your Name</label>
+                <input id="name" type="text" placeholder="Your Name" class="border-b-2 border-b-slate-950/20 p-2" />
+            </div>
+            <div class="flex flex-col">
+                <label class="py-2" for="email">Your Email</label>
+                <input id="email" type="email" placeholder="Example@email.com" class="border-b-2 border-b-slate-950/20 p-2" />
+            </div>
+            <div class="flex flex-col">
+                <label class="py-2" for="message">Your Message</label>
+                <input id="message" type="textarea" placeholder="What's up?" class="border-b-2 border-b-slate-950/20 p-2" />
+            </div>
+
+            <input type="submit" value="Send" class="border-2 rounded w-full py-2 mt-2 bg-emerald-900/80 text-white" />
+        </form>
+
     </section>
 
 </body>
