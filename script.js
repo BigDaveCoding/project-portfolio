@@ -19,3 +19,12 @@ nav_links.forEach(link => {
         }
     })
 });
+
+const about_me = document.querySelector('.about_me')
+
+fetch('/json_files/portfolio_info.json')
+    .then(response => response.json())
+    .then((data) => {
+        console.log(data)
+        about_me.innerText = data.about_me
+    })
