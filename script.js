@@ -28,6 +28,12 @@ const p_one_title = document.querySelector('.p_one_title')
 const p_one_desc = document.querySelector('.p_one_desc')
 const p_one_skills = document.querySelector('.p_one_skills')
 
+const project_two = document.querySelector('.project_two')
+const p_two_img = document.querySelector('.p_two_img')
+const p_two_title = document.querySelector('.p_two_title')
+const p_two_desc = document.querySelector('.p_two_desc')
+const p_two_skills = document.querySelector('.p_two_skills')
+
 fetch('/json_files/portfolio_info.json')
     .then(response => response.json())
     .then((data) => {
@@ -45,6 +51,15 @@ fetch('/json_files/portfolio_info.json')
             span.textContent = `#${skill} `
             p_one_skills.appendChild(span)
         })
+
+        p_two_img.src = data.project_two.image
+        p_two_title.textContent = data.project_two.name
+        p_two_desc.textContent = data.project_two.about
+        data.project_two.skills.forEach(skill => {
+            const span = document.createElement("span")
+            span.textContent = `#${skill}`
+            p_two_skills.appendChild(span)
+        });
 
 
     })
